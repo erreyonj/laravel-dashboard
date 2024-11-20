@@ -18,23 +18,8 @@ import Welcome from "@/Pages/Welcome.jsx";
 export default function DashboardLayout({children}) {
     return (
         <AuthLayout>
-            <TopBar />
-
-            {/*<Routes>*/}
-            {/*    <Route path={`/`} element={<Welcome />}/>*/}
-            {/*    <Route path={`/calendar`} element={<Calendar />}/>*/}
-            {/*    <Route path={`/team`} element={<Team />}/>*/}
-            {/*    <Route path={`/contacts`} element={<Contacts />}/>*/}
-            {/*    <Route path={`/invoices`} element={<Invoices />}/>*/}
-            {/*    <Route path={`/faq`} element={<FAQ />}/>*/}
-            {/*    <Route path={`/form`} element={<Form />}/>*/}
-            {/*    <Route path={`/bar`} element={<Bar />}/>*/}
-            {/*    <Route path={`/line`} element={<Line />}/>*/}
-            {/*    <Route path={`/pie`} element={<Pie />}/>*/}
-            {/*    <Route path={`/geo`} element={<Geo />}/>*/}
-            {/*</Routes>*/}
-
             <NavSideBar/>
+            <TopBar  />
             {children}
         </AuthLayout>
     );

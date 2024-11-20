@@ -14,6 +14,6 @@ export default function AuthLayout({ header, children }) {
     const colors = tokens(theme.palette.mode);
 
     return (
-            <main className={`min-h-screen bg-[${colors.primary[400]}]`}>{children}</main>
+            <main className={`flex min-h-screen bg-[${colors.primary[400]}]`}>{children}</main>
     );
 }
