@@ -1,8 +1,7 @@
 import NavSideBar from "@/Components/NavSideBar.jsx";
 import TopBar from "@/Components/TopBar.jsx";
 import AuthLayout from "@/Layouts/AuthLayout.jsx";
-import { Routes, Route } from "react-router-dom";
-import Welcome from "@/Pages/Welcome.jsx";
+import Header from "@/Components/Header.jsx";
 // import Team from '@/Pages/Team.jsx'
 // import Invoices from '@/Pages/Invoices.jsx'
 // import Contacts from '@/Pages/Contact.jsx'
@@ -15,7 +14,9 @@ import Welcome from "@/Pages/Welcome.jsx";
 // import Calendar from '@/Pages/Calendar.jsx'
 
 
-export default function DashboardLayout({children}) {
+
+export default function DashboardLayout({ children }) {
+
     return (
         <AuthLayout>
             <NavSideBar/>

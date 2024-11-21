@@ -19,8 +19,46 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/contact', function () {
-    return Inertia::render('Contact');
+    return Inertia::render('Contact/index');
 })->name('contact');
+
+Route::get('/team', function () {
+    return Inertia::render('Teams/index');
+})->name('team');
+
+Route::get('/invoice', function () {
+    return Inertia::render('Invoices/index');
+})->name('invoice');
+
+Route::get('/form', function () {
+    return Inertia::render('Form/index');
+})->name('form');
+
+Route::get('/calendar', function () {
+    return Inertia::render('Calendar/index');
+})->name('calendar');
+
+Route::get('/faq', function () {
+    return Inertia::render('Faq/index');
+})->name('faq');
+
+Route::get('/bar', function () {
+    return Inertia::render('Bar/index');
+})->name('bar');
+
+Route::get('/line', function () {
+    return Inertia::render('Line/index');
+})->name('line');
+
+Route::get('/pie', function () {
+    return Inertia::render('Pie/index');
+})->name('pie');
+
+Route::get('/geo', function () {
+    return Inertia::render('Geo/index');
+})->name('geo');
+
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
