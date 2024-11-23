@@ -2,6 +2,7 @@ import NavSideBar from "@/Components/NavSideBar.jsx";
 import TopBar from "@/Components/TopBar.jsx";
 import AuthLayout from "@/Layouts/AuthLayout.jsx";
 import Header from "@/Components/Header.jsx";
+import {Box} from "@mui/material";
 // import Team from '@/Pages/Team.jsx'
 // import Invoices from '@/Pages/Invoices.jsx'
 // import Contacts from '@/Pages/Contact.jsx'
@@ -20,8 +21,10 @@ export default function DashboardLayout({ children }) {
     return (
         <AuthLayout>
             <NavSideBar/>
-            <TopBar  />
-            {children}
+            <Box className={`flex flex-col w-full`}>
+                <TopBar  />
+                {children}
+            </Box>
         </AuthLayout>
     );
 }

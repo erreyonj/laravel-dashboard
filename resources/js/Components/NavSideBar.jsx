@@ -78,7 +78,7 @@ const NavSideBar = () => {
                     <MenuItem
                         onClick={() => setIsCollapsed(!isCollapsed)}
                         icon={isCollapsed ? <MenuOutlinedIcon/> : undefined}
-                        className={`mt-3 mx-0 mb-5`}
+                        className={`mt-3 mx-0 mb-4`}
                     >
                         {!isCollapsed && (
                             <Box className={`flex justify-between items-center ml-4`} sx={{}}>
