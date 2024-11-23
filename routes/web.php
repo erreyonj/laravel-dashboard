@@ -43,19 +43,19 @@ Route::get('/faq', function () {
 })->name('faq');
 
 Route::get('/bar', function () {
-    return Inertia::render('Bar/index');
+    return Inertia::render('BarChart/index');
 })->name('bar');
 
 Route::get('/line', function () {
-    return Inertia::render('Line/index');
+    return Inertia::render('LineChart/index');
 })->name('line');
 
 Route::get('/pie', function () {
-    return Inertia::render('Pie/index');
+    return Inertia::render('PieChart/index');
 })->name('pie');
 
 Route::get('/geo', function () {
-    return Inertia::render('Geo/index');
+    return Inertia::render('GeoChart/index');
 })->name('geo');
 
 
