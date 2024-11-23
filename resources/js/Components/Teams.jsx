@@ -42,7 +42,11 @@ const Teams = () => {
     return (
         <Box className={`mt-5 p-3 w-full`}>
             <Header title={`Teams`} subtitle={`A leader is only as good as the team they support!`} />
-            <Box className={`mt-3 h-[77vh]`}>
+            <Box className={`mt-3 h-[77vh]`} sx={{
+                '& .MuiDataGrid-columnHeaders': {
+                    background: '#535ac8 !important'
+                },
+            }}>
                 <DataGrid rows={mockDataTeam} columns={ columns } />
             </Box>
         </Box>
